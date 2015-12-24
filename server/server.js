@@ -12,7 +12,7 @@ http.createServer(function(req,res){
 console.log('server running at http://127.0.0.1:3000'); */
 
 ///creating a server by express
-//Test ff
+//This is a sever created on Node.js
  var express = require('express');
  var app = express(); 
  var testCases=[
