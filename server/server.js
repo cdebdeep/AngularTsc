@@ -12,29 +12,29 @@ http.createServer(function(req,res){
 console.log('server running at http://127.0.0.1:3000'); */
 
 ///creating a server by express
-//Test
+//Test ff
  var express = require('express');
  var app = express(); 
  var testCases=[
      {testCaseName:'TestCase101',testCaseId:101},
              {testCaseName:'TestCase202',testCaseId:102}
-             ]
+             ];
  app.get('/testCase',function(req,res){
      res.send(
         testCases
          )
- })
+ });
  
   app.get('/testCase/:id',function(req,res){
       var  item = testCases.filter(function(v){
-          console.log(req.params.id)
+          console.log(req.params.id);
            return v.testCaseId===req.param.id;      
         });
-         console.log(req.params.id)
+         console.log(req.params.id);
      res.send(
          item        
          )
- })
+ });
  
  app.listen(3000);
  console.log('server running at http://127.0.0.1:3000');
