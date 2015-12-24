@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Country</title>
+</head>
+<body>
+    <div ng-controller="CountryController as myCtrl">
+            <div ng-repeat="country in myCtrl.CountryCollection" >
+                {{country.CountryName}}
+            </div>
+            <div>
+                <button type="button" value="Click" ng-click="myCtrl.Get()">ClickMe</button>
+            </div>
+    </div>
+</body>
+<script type="application/javascript" src="../../bower_components/angular/angular.js"></script>
+<script type="application/javascript" src="../../bower_components/angular-route/angular-route.min.js"></script>
+<script type="application/javascript" src="../script/angular/model/testModel.js"></script>
+<script type="application/javascript" src="../script/angular/app/app.js"></script>
+<script type="application/javascript" src="../script/angular/app/appconfig.js"></script>
+<script type="application/javascript" src="../script/angular/service/CountryService.js"></script>
+<script type="application/javascript" src="../script/angular/control/CountryController.js"></script>
+</html>

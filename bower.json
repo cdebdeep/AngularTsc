@@ -1,0 +1,29 @@
+{
+  "name": "AngularTsc",
+  "version": "0.0.0",
+  "authors": [
+    "cdebdeep <cdebdeep@gmail.com>"
+  ],
+  "description": "testing",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "self",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-bootstrap": "~0.14.3",
+    "angular-route": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "d3": "~3.5.10",
+    "jquery": "~2.1.4"
+  }
+}
