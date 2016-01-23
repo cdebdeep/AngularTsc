@@ -8,6 +8,7 @@ var deb;
             (function (model) {
                 var Country = (function () {
                     function Country(name) {
+                        this.name = name;
                         this.CountryName = name;
                     }
                     return Country;

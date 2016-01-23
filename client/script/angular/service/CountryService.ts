@@ -4,8 +4,8 @@
 ///<reference path="../../../../../AngularTsc/client/script/angular/app/app.ts" />
 
 module deb.app.testApp.service {
-    import ICountry = deb.app.testApp.model.ICountry;
-    import Country = deb.app.testApp.model.Country;
+    ///import ICountry = deb.app.testApp.model.ICountry;
+    //import Country = deb.app.testApp.model.Country;
     export interface ICoutryService{
         Get() :ng.IPromise<model.ICountry[]>
     }
@@ -24,9 +24,11 @@ module deb.app.testApp.service {
         
         public Get():ng.IPromise<model.ICountry[]>{
             var def = this.myQ.defer();
+
             var Country1 = new deb.app.testApp.model.Country('INDIA');
-            var Country2 = new deb.app.testApp.model.Country('USA');            
-            var CountryCollection : ICountry[]=[Country1,Country2];
+            var Country2 = new deb.app.testApp.model.Country('USA');
+                       
+            var CountryCollection : deb.app.testApp.model.ICountry[]=[Country1,Country2];
             def.resolve(CountryCollection);            
             return def.promise;
             var x=102;

@@ -5,7 +5,7 @@ module deb.app.testApp.model {
     
     export class Country implements ICountry{
          CountryName :string
-        constructor (name : string){
+        constructor (public name : string){
            this.CountryName= name;
         }
     }
